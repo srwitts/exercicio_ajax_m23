@@ -54,6 +54,9 @@
                 repository.innerText = json.public_repos;
                 linkElement.href = json.html_url;
             })
+            .catch(function(erro) {
+                alert("Dados do site não foram encontrados")
+            })
         })
     </script>
 </body>
